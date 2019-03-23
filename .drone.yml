@@ -1,0 +1,10 @@
+kind: pipeline
+name: default
+
+steps:
+  - name: docker
+    image: plugins/docker
+    settings:
+      repo: registry/test-app
+      tags: 1
+      registry: registry
