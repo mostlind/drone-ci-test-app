@@ -5,9 +5,13 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      repo: registry/test-app
+      repo: registry.crazycow.ninja/test-app
       tags: 1
-      registry: registry
+      registry: registry.crazycow.ninja
+      username:
+        from_secret: registry-user
+      password:
+        from_secret: registry-password
     when:
       branch:
         - master
