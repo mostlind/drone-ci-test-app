@@ -8,3 +8,8 @@ steps:
       repo: registry/test-app
       tags: 1
       registry: registry
+    when:
+      branch:
+        - master
+      event:
+        - push
