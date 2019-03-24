@@ -1,7 +1,5 @@
 import { createServer } from "http";
 
-console.log('something')
-
 createServer((req, res) => {
   res.statusCode = 200;
   res.write("hello");
